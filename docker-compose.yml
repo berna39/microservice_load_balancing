@@ -15,11 +15,7 @@ services:
     environment:
       - APPID=2222
   backend3:
-    image: backend
+    image: another_backend
     environment:
       - APPID=3333
-  backend4:
-    image: backend
-    environment:
-      - APPID=4444
     
