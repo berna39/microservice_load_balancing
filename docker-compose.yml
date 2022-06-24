@@ -1,5 +1,4 @@
 version: '3'
-
 services:
   lb:
     image: haproxy
@@ -23,3 +22,4 @@ services:
     image: backend
     environment:
       - APPID=4444
+    
