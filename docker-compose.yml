@@ -19,3 +19,7 @@ services:
     image: backend
     environment:
       - APPID=3333
+  backend4:
+    image: backend
+    environment:
+      - APPID=4444
