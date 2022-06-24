@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const appid = process.env.APPID
+const appid = process.env.APPID;
 const timeouts = [20000, 10000, 15000];
 const timeout =  Math.floor(Math.random() * timeouts.length);
 
