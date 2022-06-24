@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  lb:
+    image: haproxy
+    ports:
+       - "8080:8080"
+    volumes:
+      - ./haproxy:/usr/local/etc/haproxy
+  backend1:
+    image: backend
+    environment:
+      - APPID=1111
+  backend2:
+    image: backend
+    environment:
+      - APPID=2222
+  backend3:
+    image: backend
+    environment:
+      - APPID=3333
