@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const appid = process.env.APPID;
+const appid = process.env.APPID
 const timeouts = [20000, 10000, 15000];
 const timeout =  Math.floor(Math.random() * timeouts.length);
 
@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 const server = app.listen(appid, (err) => {
     console.log(`Termiator Server running on ${appid}`);
-}); 
+});
 
 console.log(`Timeout ${timeouts[timeout]}`)
 
